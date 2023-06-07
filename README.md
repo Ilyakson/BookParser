@@ -4,7 +4,7 @@ This is a book search application that uses Django admin to manage data and web 
 ## Installation
 
 ```shell
-git clone https://github.com/Ilyakson/VacancyPars.git
+git clone https://github.com/Ilyakson/BooksParser.git
 python -m venv venv
 venv\Scripts\activate (on Windows)
 source venv/bin/activate (on macOS)
