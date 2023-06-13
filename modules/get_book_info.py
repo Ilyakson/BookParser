@@ -1,3 +1,5 @@
+import time
+
 import requests
 from bs4 import BeautifulSoup
 from django.db import transaction
@@ -71,6 +73,7 @@ class BookSearcher:
             Book.objects.filter(pk=book_obj.pk).update(**defaults)
 
         book_obj.refresh_from_db()
+        time.sleep(5)
 
     def get_seller_info(self, book_obj):
         url = f"{self.base_url}/isbnresults/{book_obj.isbn}/?used=1"
